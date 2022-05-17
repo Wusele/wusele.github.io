@@ -3,6 +3,16 @@ backButton = document.getElementById("backBtn");
 window.onload = function() {topFunction()};
 window.onscroll = function() {scrollFunction()};
 
+document.getElementById("checkbox").addEventListener('change', (event) => {
+    if(event.currentTarget.checked) {
+        var element = document.body;
+        element.className = "dark-mode";
+    }else{
+        var element = document.body;
+        element.className = "light-mode";
+    }
+})
+
 function scrollFunction() {
     if(document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
         backButton.style.display = "block";
