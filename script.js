@@ -21,18 +21,23 @@ function topFunction() {
 }
 
 function linksFunction() {
-    document.body.scrollTop = 1862;
-    document.documentElement.scrollTop = 1862;
+    document.body.scrollTop = 2720;
+    document.documentElement.scrollTop = 2720;
 }
 
 function aboutFunction() {
-    document.body.scrollTop = 941;
-    document.documentElement.scrollTop = 941;
+    document.body.scrollTop = 890;
+    document.documentElement.scrollTop = 890;
 }
 
 function contactFunction() {
-    document.body.scrollTop = 1890;
-    document.documentElement.scrollTop = 1890;
+    document.body.scrollTop = 2820;
+    document.documentElement.scrollTop = 2820;
+}
+
+function portfolioFunction() {
+    document.body.scrollTop = 1840;
+    document.documentElement.scrollTop = 1840;
 }
 
 

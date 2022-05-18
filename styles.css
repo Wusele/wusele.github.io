@@ -115,6 +115,12 @@ html {
     font-weight: bolder;
 }
 
+.portfolio_header {
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+
 .portfolio-content {
     font-size: large;
     text-align: center;
