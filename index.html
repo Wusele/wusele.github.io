@@ -17,6 +17,7 @@
             <a class="#active" onclick="topFunction()">Home</a>
             <a onclick="aboutFunction()">About</a>
             <a onclick="linksFunction()">Social</a>
+            <a onclick="contactFunction()">Contact</a>
         </div>
     </div>
     <section class="centered">
@@ -26,20 +27,41 @@
         </div>
         <img src="images/elements/png/line_short.png" alt="line" class="divider__line" data-aos="flip-left">
     </section>
-    <section class="centered">
+
+
+    <section class="centered unselectable">
         <div>
-            <h1 class="about__header unselectable" data-aos="zoom-out">
+            <h1 class="about__header" data-aos="zoom-out">
                 I'm a young
-                <span class="orange__highlight unselectable">Java Developer</span>
+                <span class="orange__highlight">Java Developer</span>
             </h1>
+            <h1 class="about__header" data-aos="zoom-in">
+                <span class="unselectable bolder">Portfolio:</span>
+            </h1>
+
+            <h2 class="portfolio-content" data-aos="zoom-in">
+                Age: 
+                <span class="orange__highlight">13</span>
+            </h2>
+            <h2 class="portfolio-content" data-aos="zoom-in">
+                Experience: 
+                <span class="orange__highlight">2 years</span>
+            </h2>
+            <h2 class="portfolio-content" data-aos="zoom-in">
+                From: 
+                <span class="orange__highlight">Germany</span>
+            </h2>
+
         </div>
+
+
         <img src="images/elements/png/line_short.png" alt="line" class="divider__line" data-aos="flip-left">
     </section>
     <div id="end__of__page" class="centered">
         <div class="row">
             <div class="logo">
                 <a class="logo" href="https://www.youtube.com/channel/UCsJEsOlvpeFeHFNdefwSYPg" target="_blank">
-                    <img src="images/elements/png/youtube.png" alt="youtube logo" data-aos="fade-left" class="logo__image">
+                    <img src="images/elements/png/youtube_logo.png" alt="youtube logo" data-aos="fade-left" class="logo__image">
                 </a>
             </div>
             <div class="logo">
@@ -51,14 +73,21 @@
         <div class="row">
             <div class="logo">
                 <a class="logo" href="https://github.com/Wusele" target="_blank">
-                    <img src="images/elements/png/github.png" alt="github logo" data-aos="fade-left" class="logo__image">
+                    <img src="images/elements/png/github_logo.png" alt="github logo" data-aos="fade-left" class="logo__image">
                 </a>
             </div>
         </div>
-        <div data-aos="fade-in">
+        <div class="website-bottom" data-aos="fade-in">
+            
             <button onclick="topFunction()" class="backBtn" id="backBtn" title="Go to top">Top</button>
         </div>
     </div>
+
+    
+        <h1 class="unselectable" id="footer">
+            Contact Email:
+            <span class="orange__highlight" onclick="copyTextToClipboard('gwuselmail@gmail.com')">gwuselmail@gmail.com</span>
+        </h1>
     
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
