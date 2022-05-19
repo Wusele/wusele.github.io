@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
     <div class="header">
         <div class="header-left">
-            <a onclick="topFunction()">Home</a>
-            <a onclick="aboutFunction()">About</a>
-            <a onclick="portfolioFunction()">Portfolio</a>
-            <a onclick="projectFunction()">Projects</a>
-            <a onclick="linksFunction()">Social</a>
-            <a onclick="contactFunction()">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
+            <a href="#social">Social</a>
+            <a href="#contact">Contact</a>
             <!-- <a onclick="printScroll()">Print Scroll</a> -->
         </div>
     </div>
-    <section class="centered">
+    <section id="home" class="centered">
         <div>
             <h1 class="hero__header pink__colored unselectable" data-aos="fade-right">Hello,</h1>
             <h1 class="hero__header unselectable" data-aos="fade-left">I'm Wusel.</h1>
@@ -32,7 +31,7 @@
     </section>
 
 
-    <section class="centered unselectable">
+    <section id="about" class="centered unselectable">
         <div>
             <h1 class="about__header" data-aos="zoom-out">
                 I'm a young
@@ -42,7 +41,7 @@
         <img src="images/elements/png/line_short.png" alt="line" class="divider__line" data-aos="flip-left">
         </section>
 
-        <section class="centered unselectable">
+        <section id="portfolio" class="centered unselectable">
             <div>
                 <h1 class="portfolio_header" data-aos="zoom-in">
                     <span class="unselectable">Portfolio:</span>
@@ -65,13 +64,13 @@
         </section>
 
 
-        <section class="centered" data-aos="zoom-down" data-aos-duration="1000">
+        <section id="projects" class="centered" data-aos="zoom-down" data-aos-duration="1000">
             <div class="unselectable">
                 <h1 class="portfolio_header" data-aos="zoom-in">
                     Projects
                 </h1>
                 <a>
-                    <img src="images/elements/png/line_medium.png">
+                    <img src="images/elements/png/line_medium.png" alt="line" class="divider__line" data-aos="flip-left">
                 </a>
                 
             </div>
@@ -91,38 +90,43 @@
         </section>
 
 
-        
-    <div id="end__of__page" class="centered">
-        <div class="row">
-            <div class="logo">
-                <a class="logo" href="https://www.youtube.com/channel/UCsJEsOlvpeFeHFNdefwSYPg" target="_blank">
-                    <img src="images/elements/png/youtube_logo.png" alt="youtube logo" data-aos="fade-left" class="logo__image">
-                </a>
+        <section id="social">
+            <div id="end__of__page" class="centered">
+                <div class="row">
+                    <div class="logo">
+                        <a class="logo" href="https://www.youtube.com/channel/UCsJEsOlvpeFeHFNdefwSYPg" target="_blank">
+                            <img src="images/elements/png/youtube_logo.png" alt="youtube logo" data-aos="fade-left" class="logo__image">
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a class="logo" href="https://open.spotify.com/artist/1WNoKxsp715jez1Td4vthc" target="_blank">
+                            <img src="images/elements/png/spotify.png" alt="discord logo" data-aos="fade-right" class="logo__image">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="logo">
+                        <a class="logo" href="https://github.com/Wusele" target="_blank">
+                            <img src="images/elements/png/github_logo.png" alt="github logo" data-aos="fade-left" class="logo__image">
+                        </a>
+                    </div>
+                </div>
+                <div class="website-bottom" data-aos="fade-in" data-aos-duration="3000">
+                    <button onclick="topFunction()" class="backBtn" id="backBtn" title="Go to top">Top</button>
+                </div>
             </div>
-            <div class="logo">
-                <a class="logo" href="https://open.spotify.com/artist/1WNoKxsp715jez1Td4vthc" target="_blank">
-                    <img src="images/elements/png/spotify.png" alt="discord logo" data-aos="fade-right" class="logo__image">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="logo">
-                <a class="logo" href="https://github.com/Wusele" target="_blank">
-                    <img src="images/elements/png/github_logo.png" alt="github logo" data-aos="fade-left" class="logo__image">
-                </a>
-            </div>
-        </div>
-        <div class="website-bottom" data-aos="fade-in">
-            
-            <button onclick="topFunction()" class="backBtn" id="backBtn" title="Go to top">Top</button>
-        </div>
-    </div>
-
+        </section>
     
-        <h1 class="unselectable" id="footer">
-            Contact Email:
-            <span class="orange__highlight" onclick="copyTextToClipboard('gwuselmail@gmail.com')">gwuselmail@gmail.com</span>
-        </h1>
+
+        <section id="contact">
+            <h1 class="popup unselectable" id="footer">
+                Contact Email:
+                <span class="popuptext" id="myPopup">Copied!</span>
+                <span class="orange__highlight" onclick="copyTextToClipboard('gwuselmail@gmail.com'); showPopup()">gwuselmail@gmail.com</span>
+            </h1>
+        </section>
+    
+        
     
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

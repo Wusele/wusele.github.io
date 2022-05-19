@@ -28,35 +28,18 @@ function printScroll() {
     console.log(document.documentElement.scrollTop);
 }
 
-function projectFunction() {
-    document.body.scrollTop = 2820;
-    document.documentElement.scrollTop = 2820;
-}
 
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-function linksFunction() {
-    document.body.scrollTop = 3650;
-    document.documentElement.scrollTop = 3650;
-}
-
-function aboutFunction() {
-    document.body.scrollTop = 890;
-    document.documentElement.scrollTop = 890;
-}
-
-function contactFunction() {
-    document.body.scrollTop = 3750;
-    document.documentElement.scrollTop = 3750;
-}
-
-function portfolioFunction() {
-    document.body.scrollTop = 1840;
-    document.documentElement.scrollTop = 1840;
-}
+function showPopup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    
+    
+  }
 
 
 
