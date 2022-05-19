@@ -28,14 +28,19 @@ function printScroll() {
     console.log(document.documentElement.scrollTop);
 }
 
+function projectFunction() {
+    document.body.scrollTop = 2820;
+    document.documentElement.scrollTop = 2820;
+}
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
 function linksFunction() {
-    document.body.scrollTop = 2720;
-    document.documentElement.scrollTop = 2720;
+    document.body.scrollTop = 3650;
+    document.documentElement.scrollTop = 3650;
 }
 
 function aboutFunction() {
@@ -44,8 +49,8 @@ function aboutFunction() {
 }
 
 function contactFunction() {
-    document.body.scrollTop = 2820;
-    document.documentElement.scrollTop = 2820;
+    document.body.scrollTop = 3750;
+    document.documentElement.scrollTop = 3750;
 }
 
 function portfolioFunction() {
