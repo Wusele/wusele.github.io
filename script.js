@@ -11,6 +11,19 @@ function scrollFunction() {
     }
 }
 
+
+function reloadWebsite() {
+    location.reload();
+}
+
+function openProject(text) {
+    switch(text) {
+        case "firebase":
+            window.open("https://github.com/Wusele/FirebaseAPI-1.16.4");
+            break
+    }
+}
+
 function printScroll() {
     console.log(document.documentElement.scrollTop);
 }
