@@ -27,6 +27,9 @@ function openProject(text) {
         case "discordBotX":
             window.open("https://github.com/Wusele/Discord-Bot-X/tree/main");
             break
+        case "syncedchat":
+            window.open("https://github.com/Wusele/Spigot-SyncedChat");
+            break;
     }
 }
 
