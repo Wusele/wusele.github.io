@@ -1,8 +1,9 @@
+
+
 backButton = document.getElementById("backBtn");
 
 window.onload = function() {
-    topFunction()
-    setText('< section >', 'section-1')
+    topFunction();
 };
 window.onscroll = function() {scrollFunction()};
 
@@ -12,6 +13,13 @@ function scrollFunction() {
     }else {
         backButton.style.display = "none";
     }
+}
+
+
+function scroll(scroll) {
+    document.body.scrollTop = scroll;
+    document.documentElement.scrollTop = scroll;
+    console.log("Scrolling to: " + scroll)
 }
 
 
@@ -31,10 +39,6 @@ function openProject(text) {
             window.open("https://github.com/Wusele/Spigot-SyncedChat");
             break;
     }
-}
-
-function imageUnBlur(title, description) {
-    
 }
 
 function getDimensions(id) {
