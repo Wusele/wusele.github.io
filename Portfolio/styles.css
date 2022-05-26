@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e9cbaf;
+    color: #6c3d4c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1vh;
+    text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    scroll-behavior: smooth; 
+    }
+    
+     /* Hide scrollbar for Chrome, Safari and Opera */
+    .html::-webkit-scrollbar {
+        display: none;
+    }
+
+#footer {
+    margin-bottom: -30vh;
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+.header {
+    float: left;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px 10px;
+    position: absolute;
+    z-index: 999;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header img {
+    max-width:10%;
+    max-height:10%;
+    float: left;
+    border-color: black;
+    border-width: 20px;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    box-shadow: inset 0px 0px 10px 20px #ddd;
+    border-radius: 15px;
+    color: black;
+}
+
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-left {
+    background-color: #e9cbaf;
+    border-radius: 5px;
+    overflow: visible;
+    float: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink__colored {
+    color: #F18080;
+}
+
+.orange__highlight {
+    background-color: #C200FB;
+    border-radius: 20px;
+    line-height: 1.5;
+    padding-right: 0.9vw;
+    padding-left: 0.9vw;
+    font-weight: 520;
+    text-shadow: orangered;
+    box-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.project {
+    text-align: center;
+    position: relative;
+}
+
+.project-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 500px;
+
+    filter: blur(2px);
+
+    border: 5px solid aqua;
+
+    border-radius: 20px;
+    border-color: #4381C1;
+
+    transition: all 0.1s ease-in-out;
+    background-color: gray;
+
+    cursor: pointer;
+}
+
+.project-img:hover{
+    filter: blur(0px);
+    width: 1030px;
+    height: 530px;
+}
+
+
+
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aqua;
+    font-size: large;
+    text-shadow: 3px 2px 2px rgb(14, 182, 182);
+}
+
+.project-desc {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(2, 167, 167);
+    font-size: medium;
+    text-shadow: 3px 2px 2px rgb(2, 105, 105);
+}
+
+.portfolio_header {
+    font-size: 3vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.portfolio-content {
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px gray;
+}
+
+.portfolio-content:hover {
+    background-color: #b59e88;
+    border-radius: 30px;
+    line-height: 1.5;
+    padding-right: 0.9vw;
+    padding-left: 0.9vw;
+    font-weight: 520;
+    box-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+}
+
+
+.hero__header {
+    font-size: 6vw;
+    font-weight: 400;
+}
+
+.divider__line {
+    height: 4vw;
+}
+
+.about__header {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.logo {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.logo__image {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 10vw;
+}
+
+.backBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4381C1; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    padding-top: 20px;
+}
+
+.backDiv {
+    position: fixed;
+    padding: 15px;
+    bottom: 20px;
+    right: 30px;
+}
+
+.backBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .header {
+        align-items: center;
+    }
+
+    .header-left {
+        align-items: center;
+    }
+    
+    .hero__header {
+        font-size: 12vw;
+        font-weight: 400;
+    }
+
+    .about__header {
+        font-size: 5vw;
+        font-weight: 400;
+    }
+
+    .divider__line {
+        height: 8vw;
+    }
+
+    .logo__image {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 14vw;
+    }
+
+    .project-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 250px;
+    
+        filter: blur(2px);
+    
+        border: 5px solid aqua;
+    
+        border-radius: 20px;
+        border-color: #4381C1;
+    
+        transition: all 0.1s ease-in-out;
+        background-color: gray;
+    
+        cursor: pointer;
+    }
+    
+    
+    
+    .project-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aqua;
+        font-size: medium;
+        text-shadow: 3px 2px 2px rgb(14, 182, 182);
+    }
+    
+    .project-desc {
+        position: absolute;
+        margin-top: 10px;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        color: rgb(2, 167, 167);
+        font-size: small;
+        text-shadow: 3px 2px 2px rgb(2, 105, 105);
+    }
+
+    .project-line {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .project-img:hover {
+        width: 325px;
+        height: 275px;
+    }
+
+    .portfolio_header {
+        font-size: 9vw;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .logo {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1);
+        cursor: default;
+    }
+    
+    .logo__image {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 30vw;
+    }
+
+    .about__header {
+        font-size: 6vw;
+        font-weight: 400;
+    }
+}

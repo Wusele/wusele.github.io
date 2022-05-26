@@ -1,169 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wusel's Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="images/elements/png/Portfolio.png"/>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wusel's Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#projects">Projects</a>
-            <a href="#social">Social</a>
-            <a href="#contact">Contact</a>
-            <!-- <a onclick="printScroll()">Print Scroll</a> -->
+
+    <section class="centered">
+        <div class="title">
+            <h1>My Websites</h1>
         </div>
-    </div>
-    <section id="home" class="centered">
-        <div>
-            <h1 class="hero__header pink__colored unselectable" data-aos="fade-right">Hello,</h1>
-            <h1 class="hero__header unselectable" data-aos="fade-left">I'm Anton.</h1>
-        </div>
-        <img src="images/elements/png/line_short.png" alt="line" class="divider__line" data-aos="flip-left">
+        <img src="Portfolio/images/elements/png/line_medium.png">
     </section>
 
-
-    <section id="about" class="centered unselectable">
-        <div>
-            <h1 class="about__header" data-aos="zoom-out">
-                I'm a young
-                <span class="orange__highlight">Java Developer</span>
-            </h1>
+    <section class="websites">
+        <div class="website">
+            <a href="./Portfolio/index.html">
+                <img src="images/portfolio.png">
+                <h1>Portfolio</h1>
+            </a>
         </div>
-        <img src="images/elements/png/line_short.png" alt="line" class="divider__line" data-aos="flip-left">
-        </section>
-
-        <!-- <h3 id="section-1" style="float: left; margin-left: 30px; color: #535353; font-size: medium;">"< section >"</h3> -->
-        <section id="portfolio" class="centered unselectable">
-            <div>
-                <h1 class="portfolio_header" data-aos="zoom-in">
-                    <span class="unselectable">Portfolio:</span>
-                </h1>
-    
-                <h2 class="portfolio-content" data-aos="zoom-in">
-                    Age: 
-                    <span class="orange__highlight">13</span>
-                </h2>
-                <h2 class="portfolio-content" data-aos="zoom-in">
-                    From: 
-                    <span class="orange__highlight">Germany</span>
-                </h2>
-                <h2 class="portfolio-content" data-aos="zoom-in">
-                    Experience: 
-                    <span class="orange__highlight">2 years</span>
-                </h2>
-            </div>
-            <img src="images/elements/png/line_medium.png" alt="line" class="divider__line" data-aos="flip-left">
-        </section>
-        <!-- <h3 id="section-1" style="float: left; margin-left: 30px; color: #535353; font-size: medium;">< /section ></h3> -->
-
-
-        <section id="projects" class="centered" data-aos="zoom-down" data-aos-duration="1000">
-            <div class="unselectable">
-                <h1 class="portfolio_header" data-aos="zoom-in">
-                    Projects
-                </h1>
-                <a>
-                    <img src="images/elements/png/line_medium.png" alt="line" class="divider__line" data-aos="flip-left">
-                </a>
-                
-            </div>
-
-            <div id="project1" class="project">
-                <img id="img" class="project-img" src="images/elements/png/firebase.png" onclick="openProject('firebase')">
-                <a class="project-title unselectable">
-                    <h2>
-                        Firebase Integration for Spigot
-                    </h2>
-                    <img class="project-line" src="images/elements/png/line_short.png">
-                </a>
-                <h3 class="project-desc unselectable">
-                    This project allows you to use the firebase cloud in spigot
-                </h3>
-            </div>
-            <div id="project2" class="project">
-                <img class="project-img" src="images/elements/png/botx.png" onclick="openProject('discordBotX')">
-                <a class="project-title unselectable">
-                    <h2>
-                        Discord Bot X
-                    </h2>
-                    <img class="project-line divider__line" alt="line" src="images/elements/png/line_short.png">
-                </a>
-                <h3 class="project-desc unselectable">
-                    This Project allows you to control your discord bot via. an Application.
-                </h3>
-            </div>
-            <div id="project3" class="project">
-                <img class="project-img" src="images/elements/png/code-background.png" onclick="openProject('syncedchat')">
-                <a class="project-title unselectable">
-                    <h2>
-                        Synced Chat
-                    </h2>
-                    <img class="project-line divider__line" alt="line" src="images/elements/png/line_short.png">
-                </a>
-                <h3 class="project-desc unselectable">
-                    Syncs Minecraft's chat and Discord's
-                </h3>
-            </div>
-        </section>
-
-
-        <section id="social">
-            <div id="end__of__page" class="centered">
-                <div class="row">
-                    <div class="logo">
-                        <a class="logo" href="https://www.youtube.com/channel/UCsJEsOlvpeFeHFNdefwSYPg" target="_blank">
-                            <img src="images/elements/png/youtube_logo.png" alt="youtube logo" data-aos="fade-left" class="logo__image">
-                        </a>
-                    </div>
-                    <div class="logo">
-                        <a class="logo" href="https://open.spotify.com/artist/1WNoKxsp715jez1Td4vthc" target="_blank">
-                            <img src="images/elements/png/spotify.png" alt="discord logo" data-aos="fade-right" class="logo__image">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="logo">
-                        <a class="logo" href="https://github.com/Wusele" target="_blank">
-                            <img src="images/elements/png/github_logo.png" alt="github logo" data-aos="fade-left" class="logo__image">
-                        </a>
-                    </div>
-                </div>
-                <div class="website-bottom" data-aos="fade-in" data-aos-duration="3000">
-                    <button onclick="topFunction()" class="backBtn" id="backBtn" title="Go to top">Top</button>
-                </div>
-            </div>
-        </section>
-    
-
-        <section id="contact">
-            <h1 class="popup unselectable" id="footer">
-                Contact Email:
-                <span class="popuptext" id="myPopup">Copied!</span>
-                <span class="orange__highlight" onclick="copyTextToClipboard('gwuselmail@gmail.com'); showPopup()">gwuselmail@gmail.com</span>
-            </h1>
-        </section>
-    
-        
-    
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init(
-        {
-            once: false,
-            mirror: true,
-            anchorPlacement: 'top-bottom',
-            offset: 0,
-            duration: 800
-        });</script>
-        <script src="script.js"></script>
+    </section>
 </body>
 </html>
