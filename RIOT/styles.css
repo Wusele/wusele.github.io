@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #1c1c1c;
+    color: #b7b7b7;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1vh;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.pageTop {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+}
+
+.category__header {
+    font-size: 3vh;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+h1 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: white;
+}
+
+.left {
+    float: left;
+    left: 40px;
+    margin-right: auto;
+}
+
+.right {
+    float: right;
+    right: 40px;
+    margin-left: auto;
+}
+
+.custom__button {
+    position: fixed;
+    overflow: visible;
+    margin-top: 30px;
+    background-color: #2d2d2d;
+    opacity: 0.5;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.custom__button:hover {
+    background-color: #2d2d2d;
+    opacity: 1;
+}
+
+.header {
+    margin-top: 20;
+    background-color: #1c1c1c;
+}
+
+.header img {
+    top: 0%;
+    width: auto;
+    height: auto;
+}
+
+.game {
+    width: 502px;
+    height: 282px;
+    margin-left: 100px;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.game-description h2 {
+    margin-top: 12px;
+    margin-left: 5px;
+    font-size: large;
+    color: white;
+    cursor: default;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.game-description img {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 25px;
+    width: auto;
+}
+
+.game-description {
+    user-select: none;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.game-img {
+    padding: 10px 10px 10px 10px;
+    width: 502px;
+    height: 282px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.game-cover {
+    border-radius: 10px;
+    outline: 5px #cdc3c4 solid;
+    outline-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.game-cover:hover {
+    outline-color: #cdc3c4;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.centered {
+    min-height: 50vh;
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.games-tab {
+    background-color: #141212;
+    display: flex;
+    flex-direction: column;
+}
