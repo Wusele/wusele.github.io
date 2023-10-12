@@ -152,6 +152,10 @@ html {
     margin-bottom: 10px;
 }
 
+.project img {
+    filter: blur(2px);
+}
+
 .project-img {
     display: block;
     margin-left: auto;
@@ -159,7 +163,7 @@ html {
     width: 1000px;
     height: 500px;
 
-    filter: blur(2px);
+
 
     border: 5px solid aqua;
 
