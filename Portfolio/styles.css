@@ -176,6 +176,10 @@ html {
     filter: blur(0px);
 }
 
+.project:hover img{
+    filter: blur(0px);
+}
+
 
 
 .project-title {
