@@ -172,11 +172,8 @@ html {
     cursor: pointer;
 }
 
-.project-img:hover{
-    filter: blur(0px);
-}
 
-.project:hover img {
+.project:hover * {
     filter: blur(0px);
 }
 
