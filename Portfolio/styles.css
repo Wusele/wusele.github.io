@@ -150,6 +150,8 @@ html {
 
     margin-top: 10px;
     margin-bottom: 10px;
+
+    border: 5px solid aqua;
 }
 
 .project img {
@@ -165,7 +167,7 @@ html {
 
 
 
-    border: 5px solid aqua;
+    /*border: 5px solid aqua;*/
 
     border-radius: 20px;
     border-color: #4381C1;
@@ -355,7 +357,7 @@ html {
     
         filter: blur(2px);
     
-        border: 5px solid aqua;
+       /* border: 5px solid aqua; */
     
         border-radius: 20px;
         border-color: #4381C1;
