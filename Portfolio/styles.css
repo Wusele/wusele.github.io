@@ -155,10 +155,6 @@ html {
     border-radius: 20px !important;
 }
 
-.project:hover {
-    border: 7px solid aqua;
-}
-
 .project img {
     filter: blur(2px);
 }
