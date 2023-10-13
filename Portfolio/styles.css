@@ -155,6 +155,8 @@ html {
     border-radius: 20px !important;
 
     transition: all 0.2s ease-in-out;
+
+    z-index: 10;
 }
 
 .project img {
