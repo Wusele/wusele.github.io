@@ -151,8 +151,8 @@ html {
     margin-top: 10px;
     margin-bottom: 10px;
 
-    border: 5px solid aqua;
-    border-radius: 20px;
+    border: 5px solid aqua !important;
+    border-radius: 20px !important;
 }
 
 .project:hover {
@@ -172,10 +172,12 @@ html {
 
 
 
-    /*border: 5px solid aqua;*/
+    /*
+    border: 5px solid aqua;
 
     border-radius: 20px;
     border-color: #4381C1;
+    */
 
     transition: all 0.2s ease-in-out;
     background-color: gray;
