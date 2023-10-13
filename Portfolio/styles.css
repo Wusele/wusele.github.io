@@ -155,12 +155,11 @@ html {
     border-radius: 20px !important;
 
     transition: all 0.2s ease-in-out;
-
-    overflow: hidden;
 }
 
 .project img {
     filter: blur(2px);
+    overflow: hidden;
 }
 
 .project-img {
