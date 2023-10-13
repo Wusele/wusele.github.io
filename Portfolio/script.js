@@ -28,7 +28,7 @@ function reloadWebsite() {
 }
 
 function openProject(text) {
-    switch(text) {
+    switch(text.toLowerCase()) {
         case "firebase":
             window.open("https://github.com/Wusele/FirebaseAPI-1.16.4");
             break
@@ -37,6 +37,9 @@ function openProject(text) {
             break
         case "syncedchat":
             window.open("https://github.com/Wusele/Spigot-SyncedChat");
+            break;
+        case "wuselutils":
+            window.open("https://github.com/Wusele/WuselUtils");
             break;
     }
 }
