@@ -153,6 +153,8 @@ html {
 
     border: 5px solid aqua !important;
     border-radius: 20px !important;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .project img {
