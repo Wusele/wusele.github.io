@@ -179,6 +179,8 @@ html {
     border-color: #4381C1;
     */
 
+    border-radius: 15px;
+
     transition: all 0.2s ease-in-out;
     background-color: gray;
 
