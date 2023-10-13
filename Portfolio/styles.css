@@ -317,7 +317,7 @@ html {
     color: #944d64;
 }
 
-
+/*
 @media only screen and (max-width: 1024px) {
 
     .header {
@@ -357,7 +357,7 @@ html {
     
         filter: blur(2px);
     
-       /* border: 5px solid aqua; */
+        border: 5px solid aqua; 
     
         border-radius: 20px;
         border-color: #4381C1;
@@ -432,3 +432,4 @@ html {
         font-weight: 400;
     }
 }
+*/
